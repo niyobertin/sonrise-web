@@ -4,18 +4,29 @@ header{
 
 }
 #logo, #links{
+    /*flex for giving the distance btn two div*/
 flex: 1;
 margin: 20px;
+display: flex;
+align-items: center;
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
 }
 #links a{
     margin: 10px;
-    text-decoration: none;
+    /*to remove line on linkx. or decoration of text*/
+    text-decoration:none;
 
 }
 #home{
     background-image: url("../assets/Lighthouse.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    /*increasing the height of div depending on the size of screen*/
     height: 80vh;
     
     color: white;
@@ -27,8 +38,59 @@ margin: 20px;
     background-color: black;
     height: 100%;
     width: 100%;
+    /*on condition of same thimg being opacity or not that help to to view any thing that is beside other*/ 
     opacity: 0.7;
+    /*displaying with flex help to make our selection to go throut between equal area from up and top*/
     display: flex;
     align-items: center;
+    /*justfying helps to put content on needed place*/
     justify-content: center;
+}
+#about{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+#programs{
+width: 60%;
+margin: 60px auto;
+
+
+}
+#programs h1{
+    text-align: center;
+    
+    }
+#programs_list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#registration{
+    width: 50%;
+    margin: 60px auto;
+}
+#registration h1{
+    text-align: center;
+}
+footer{
+background-color:#2A2B43 ;
+color: white;
+
+}
+#information{
+    width: 80%;
+    margin: 100px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+#copyright_info{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#copyright_info p{
+    margin-right: 30px;
 }
